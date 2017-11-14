@@ -1,0 +1,53 @@
+Vai trò ngữ nghĩa dùng để đánh dấu mối quan hệ cơ bản giữa một thành phần với động từ chính trong câu.
+
+Có thể xác định vai trò ngũ nghĩa bằng cách trả lời các câu hỏi: Ai? Làm cái gì? Cho ai? Ở đâu? Khi nào? và Tại sao? (Who did What to Whom, When, Where, When, Why?)
+
+    vd: Nam giúp Huy  học bài vào hôm qua
+        who     whom   what    when
+
+Qua đó ta có thể gán nhãn vai trò ngữ nghĩa cho câu trên như sau
+        Nam giúp Huy  học bài vào hôm qua
+        Arg0     Arg1  Arg2     ArgM-TMP
+
+Các nhãn được sử dụng để đánh dấu vai trò ngữ nghĩa trong câu tiếng việt gồm có:
+    V: Động từ chính của mệnh đề (the verb of the proposition.)
+    Arg0: Nguyên nhân
+    Arg1: Chủ thể trực tiếp của hành động
+    Arg2:
+    Arg3:
+    Arg4:
+    ArgM-ADV: general-purpose
+    ArgM-DIS: discourse marker
+    ArgM-NEG: negation marker
+    ArgM-PRD: predication
+    ArgM-MOD: modal verb
+    ArgM-REC: reciprocal
+    ArgM-LVB: light verb
+    ArgM-COM: comitative
+    ArgM-Partice: partice
+    ArgM-ADJ: unknown
+    ArgM-CAU: cause
+    ArgM-DIR: direction
+    ArgM-MNR: manner
+    ArgM-PRP: purpose
+    ArgM-TMP: temporal
+    ArgM-GOL: goal
+    ArgM-EXT: extent
+    ArgM-I: interjection
+    ArgM-PNC: purpose
+    ArgM-RES: unknown
+
+
+ref:
+[1] http://www.lsi.upc.es/~srlconll/spec.html
+[2]
+
+
+
+
+
+Trans
+
+PropBank Annotation Guidelines
+
+1.1     Mục tiêu gán nhãn propbank
