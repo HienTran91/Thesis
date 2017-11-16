@@ -51,3 +51,40 @@ Trans
 PropBank Annotation Guidelines
 
 1.1     Mục tiêu gán nhãn propbank
+    PropBank là một tập ngữ liệu, trong đó các đối số (arguments) của mỗi vị ngữ (predicate) được chú thích với
+vai trò ngữ nghĩa (semantic role) liên quan đến vị ngữ (Palmer et al, 2005). Hiện tại, tất cả các chú thích của PropBank
+được thực hiện trên phần chú thích cấu trúc cụm từ của Penn TreeBank (Marcus et al., 1993). Ngoài chú thích vai trò ngữ nghĩa,
+chú thích PropBank yêu cầu sự lựa chọn của nét nghĩa (sense id)(còn được gọi là'frameset' hoặc 'roleset' id) cho mỗi vị ngữ.
+Vì vậy, đối với mỗi động từ trong mỗi cây (đại diện cho cấu trúc cụm từ của câu tương ứng), chúng ta tạo ra một thể hiện của PropBank
+bao gồm nét nghĩa của vị ngữ (ví dụ: chạy.02) và các đối số của nó được gắn nhãn vai trò ngữ nghĩa.
+    Một mục tiêu quan trọng là cung cấp các nhãn đối số nhất quán trên tất cả các cú pháp khác nhau của động từ tương tự,
+        Vd:
+            [ARG0 John] broke [ARG1 the window]
+            [ARG1 The window] broke
+    Như ví dụ này cho thấy, các đối số của động từ được dán nhãn là các đối số được đánh số (numbered arguments): Arg0, Arg1, Arg2...
+Cấu trúc đối số của mỗi vị ngữ được mô tả trong file PropBank frame cho vị ngữ đó. Frame file cung cấp cả thông tin ngữ nghĩa
+và cú pháp về mỗi nghĩa của các vị ngữ đã được gặp phải trong quá trình chú thích PropBank. Frame file cũng biểu thị sự tương ứng
+giữa các đối số được đánh số và vai trò ngữ nghĩa. Đối số được đánh số phản ánh các đối số cần thiết cho tính hợp lệ của vị ngữ
+(ví dụ: chủ thể của động từ (agent), người/vật bị tác động bởi ảnh hưởng của động từ (patient), người/vật có lợi từ hành động của động từ (benefactive)),
+hoặc nếu không yêu cầu thì thường xảy ra với tần suất cao trong cách sử dụng thực tế.
+Mặc dù được đối số được đánh số tương ứng với các vai trò ngữ nghĩa khác nhau được sử dụng cho từng vị ngữ, nhưng nhìn chung
+các đối số được đánh số chung tương ứng với các vai trò ngữ nghĩa sau:
+    ARG0 agent  (chủ thể của hành động)
+    ARG1 patient  (người/vật bị tác động trực tiếp từ hành động của động từ)
+    ARG2 instrument, benefactive, attribute  (công cụ, người/vật được hưởng lợi từ hành động của động từ, thuộc tính )
+    ARG3 starting point, benefactive, attribute (điểm bắt đầu, người/vật được hưởng lợi từ hành động của động từ, thuộc tính)
+    ARG4 ending point (điểm kết thúc)
+    ARGM modifier (bổ nghĩa)
+
+    Ngoài các đối số được đánh số, một tác vụ khác của chú thích PropBank bao gồm việc gán các thẻ chức năng cho tất cả các
+bổ nghĩa của động từ, như cách thức (Manner(MNR), vị trí (locative (LOC)), thời gian (temporal (TMP)) .v.v...
+    Mr. Bush met him privately, in the White House, on Thursday.
+    Rel: met
+    Arg0: Mr. Bush
+    Arg1: him
+    ArgM-MNR: privately
+    ArgM-LOC: in the White House
+    ArgM-TMP: on Thursday
+
+    Chú thích của PropBank liên quan đến việc tìm tiền thân cho các lập luận trống rỗng động từ, như minh họa dưới đây:
+
