@@ -88,3 +88,4 @@ bổ nghĩa của động từ, như cách thức (Manner(MNR), vị trí (locat
 
     Chú thích của PropBank liên quan đến việc tìm tiền thân cho các lập luận trống rỗng động từ, như minh họa dưới đây:
 
+s
